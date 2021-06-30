@@ -78,6 +78,18 @@ body {
     color: #FCDE0C;
 }
 
+#tip {
+    position: relative;
+    font-family: Rock Salt;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 55px;
+    line-height: 131px;
+    color: #e60000;
+    left: 10%;
+    top: 720px;
+}
+
 #hello-simo {
     position: absolute;
     width: 302px;

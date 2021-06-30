@@ -50,8 +50,8 @@ const questionsSet = [{
     {
         //7
         question: " 7 * 5 - 8 * 2",
-        correct: 25,
-        answers: [25, 27, 35, 42]
+        correct: 19,
+        answers: [19, 27, 35, 42]
     },
     {
         //8
@@ -80,7 +80,6 @@ function startGame() {
     question.innerHTML = questionsSet[0].question;
     questionNumber.innerHTML = "0/9";
     showAnswers();
-    // qNum++;
 }
 
 nextQuestion.addEventListener('click', setNextQuestion);
@@ -91,7 +90,6 @@ function setNextQuestion() {
         thirdDiv.classList.remove('hide')
         thirdDiv.classList.add('show');
         secDiv.classList.remove('show');
-        correctAnswers();
     } else
         questionNumber.innerHTML = `${qNum}/9`;
 
@@ -108,11 +106,10 @@ function showAnswers() {
 
 choices.forEach(e => {
     e.addEventListener('click', btn => {
-        console.log({ qNum })
         if (e.textContent == (questionsSet[qNum].correct)) {
             score++;
-            console.log(e.textContent)
         }
         scoreText.textContent = `${score}/10`;
+        setNextQuestion();
     })
 })
