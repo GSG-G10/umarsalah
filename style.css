@@ -124,6 +124,21 @@ body {
     top: 10px;
 }
 
+#q-num {
+    position: absolute;
+    width: 167px;
+    height: 106px;
+    left: 0px;
+    top: 120%;
+    font-family: Rock Salt;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 35px;
+    line-height: 84px;
+    text-align: center;
+    color: #FCDE0C;
+}
+
 #next-btn {
     position: absolute;
     width: 325px;
