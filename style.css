@@ -88,6 +88,8 @@ body {
 
 #question {
     position: absolute;
+    text-align: justify;
+    font-size: 45px;
     width: 750px;
     height: 100px;
     left: 30%;
